@@ -1,0 +1,297 @@
+body, html {
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  background-color: #f8f8fa;
+}
+
+.navbar{
+  width: 100%;
+  position: fixed;
+  background-color: #f8f8faef;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica;
+}
+.navbar a{
+  color: #050010;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover{
+  color: #ED7600;
+  font-weight: bolder;
+}
+.navbar li{
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.img-head {
+  /* The image used */
+  background-image: url(imagens/fundo-head.png);
+  
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.text-head{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f8f8fa;
+}
+.text-head-frase{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 120px;
+}
+.text-head-block{
+  font-size: 20px;
+  margin-top: -30px;
+  font-family: "Monaco", monospace;
+}
+.text-me{
+  color: #050010;
+  text-align: center;
+}
+.text-me-titulo{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 120px;
+}
+.text-me-info{
+  font-size: 20px;
+  font-family: "Monaco", monospace;
+
+}
+.img-text{
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 70px;
+}
+.hab-text{
+  color: #050010;
+  text-align: center;
+  margin-top: 90px;
+}
+.hab-text-titulo{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 120px;
+  margin-top: 60px;
+}
+.hab-text-contx{
+  font-size: 20px;
+  font-family: "Monaco", monospace;
+  margin-bottom: 90px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  margin-top: 300px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #050010;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #e4a05d;
+}
+
+/* Caption text */
+.text {
+  color: #050010;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  font-weight: bold;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: "Monaco", monospace;
+}
+
+.slideshow-titulo{
+  text-align: center;
+  margin-bottom: -160px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 60px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #e4a05d;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ED7600;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.header {
+  text-align: center;
+  padding: 32px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 60px;
+  margin-top: 60px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  background-color: #e4a05d;
+  border-radius: 12px;
+}
+
+.btn.active {
+  background-color: #ED7600;
+  color: white;
+  border-radius: 12px;
+}
+.list-inline-item{
+  display: inline-block;
+  font-family: "Monaco", monospace;
+}
+.copyright{
+  font-family: 'Bebas Neue', cursive;
+}
+.footer-basic {
+  padding:40px 0;
+  background-color: #050010;
+  color:#f8f8fa;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#8b8b8b;
+  margin-bottom:0;
+}
+
+/* Credit to https://epicbootstrap.com/snippets/footer-basic */
