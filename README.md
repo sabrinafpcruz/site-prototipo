@@ -1,2 +1,2 @@
 # site-teste
-prototipo de site pessoal antigo
+projeto de site pessoal para treinar utilizando as linguagens HTML, CSS e Javascript
